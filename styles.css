@@ -475,7 +475,7 @@ a{
 
 .services-container{
     width: 100%;
-    height: 600px;
+    height: 850px;
     background: url(./images/promo-bg.webp) center bottom no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -487,13 +487,121 @@ a{
     position: absolute;
     width: 100%;
     height: 200%;
-    background: linear-gradient(180deg,#222228 0,rgba(34,34,40,0) 100%)
+    background: linear-gradient(180deg,#222228 0,rgba(34,34,40,0) 100%);
 }
 
-.after-container{
+.services-inner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 150px;
+    gap: 100px;
     width: 100%;
-    height: 1000px;
+    z-index: 5;
 }
+
+.services-title{
+    font-size: 32px;
+    font-family: SuisseThin;
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+    z-index: 1;
+    margin-top: -10px;
+}
+
+.services-tiles-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+}
+
+.service-tile{
+    width: 300px;
+    height: 400px;
+    background: rgba(255,255,255,.05) 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 5px #0000001a;
+    border-radius: 10px;
+    padding: 40px 20px 30px 20px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+
+.service-tile-image{
+    filter: brightness(0) invert(1);
+    height: 40px;
+}
+
+.service-tile-title{
+    font-family: SuisseReg;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.service-tile-text{
+    margin-top: -10px;
+    font-size: 18px;
+    font-family: SuisseThin;
+}
+
+.service-tile-price{
+    color: green;
+    font-size: 40px;
+}
+
+.service-button{
+    position: relative;
+    font-family: SuisseThin;
+    font-weight: bold;
+    padding: 10px 60px 10px 60px;
+    border-radius: 25px;
+    border: 2px white solid;
+    font-size: 25px;
+    transition: 0.4s all ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.service-button:after {
+  content: '»';
+  font-size: 50px;
+  position: absolute;
+  opacity: 0;  
+  top: -5px;
+  right: -5px;
+  transition: 0.5s;
+}
+
+.service-button:hover{
+  padding-right: 65px;
+  padding-left:65px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.service-button:hover:after {
+  opacity: 1;
+  right: 30px;
+}
+
+.service-button:hover{
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width: 400px) {
     .hero-top-container-inner-1{
