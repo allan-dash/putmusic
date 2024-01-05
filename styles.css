@@ -580,8 +580,8 @@ a{
   font-size: 50px;
   position: absolute;
   opacity: 0;  
-  top: -5px;
-  right: -5px;
+  top: -10px;
+  right: -10px;
   transition: 0.5s;
 }
 
