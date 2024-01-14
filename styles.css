@@ -719,7 +719,6 @@ a{
     .about-container{
         margin-top: 300px;
         margin-bottom: 750px;
-
     }
 
     .tri-group-1,.tri-group-2{
@@ -768,36 +767,20 @@ a{
 @media only screen and (max-width: 550px) {
 
     .about-title{
-        font-size: 20px;
+        font-size: 23px;
+    }
+
+    .about-container{ 
+        margin-bottom: 0px;
+    }
+    
+    .about-container-right{
+        display: none;
     }
 
     .about-text{
         font-size: 16px;
         width: 300px;
-    }
-
-    .promo-text{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .promo-text{
-        font-size: 20px;
-    }
-    
-    .promo-logo{
-        height: 50px;
-        width: 45px;
-        margin-top: 10px;
-        margin-right: 10px;
-    }
-
-    .spantest{
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .about-button{
