@@ -663,6 +663,7 @@ a{
     gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .reviewer{
@@ -782,9 +783,16 @@ a{
         font-size: 16px;
         width: 300px;
     }
-
     .about-button{
         padding: 10px 40px 10px 40px;
         font-size: 15px;
+    }
+
+    .review-container-top{
+        width: 100%;
+    }
+
+    .review-text{
+        font-size: 20px;
     }
 }
