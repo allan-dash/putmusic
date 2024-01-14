@@ -345,6 +345,7 @@ a{
     height: 90vh;
     display: flex;
     margin-top: 175px;
+    flex-wrap: wrap;
 }
 
 .about-container-left{
@@ -357,15 +358,8 @@ a{
     justify-content: center;
     gap: 50px;
     padding: 100px;
+    flex: 1;
 
-}
-
-.tri-group-1{
-    position: absolute;
-    z-index: 5;
-    top: 190%;
-    margin-top: -1px;
-    animation: y-stretch 7s ease-in-out infinite alternate-reverse;
 }
 
 .about-title{
@@ -428,6 +422,14 @@ a{
     cursor: pointer;
 }
 
+.tri-group-1{
+    position: absolute;
+    z-index: 5;
+    top: 189.5%;
+    margin-top: -1px;
+    animation: y-stretch 7s ease-in-out infinite alternate-reverse;
+}
+
 .tri-group-2{
     position: absolute;
     left: 50%;
@@ -436,6 +438,9 @@ a{
     animation: h-stretch 5s ease-in-out infinite alternate;
 }
 
+.tri-group-1,.tri-group-2{
+    z-index: 2;
+}
 
 .about-container-right{
     display:flex;
@@ -446,6 +451,7 @@ a{
     background-size: cover;
     width: 50%;
     margin-top: 140px;
+    z-index: 1;
 }
 
 .promo-image{
@@ -488,13 +494,14 @@ a{
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg,#222228 0,rgba(34,34,40,0) 100%);
+    margin-top: -3px;
 }
 
 .services-inner-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 150px;
+    padding-top: 200px;
     gap: 100px;
     width: 100%;
     z-index: 5;
@@ -646,6 +653,7 @@ a{
 .review-container-bottom{
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .reviewer{
@@ -707,5 +715,25 @@ a{
 
     .about-container{
         margin-top: 300px;
+        margin-bottom: 750px;
+
+    }
+
+    .tri-group-1,.tri-group-2{
+        display: none;
+    }
+
+    .about-container-right{
+        width: 100%;
+        margin-top: 0px;
+        height: 750px;
+    }
+
+    .about-container-left{
+        width: 100%;
+    }
+
+    .services-container{
+        height: 1300px;
     }
 }
